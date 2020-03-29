@@ -30,7 +30,7 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  transform: translateX(-100%);
+  transform: translateX(-100%); /*This removes the nav bar from main viewport*/
 }
 
 nav .logo {
@@ -137,8 +137,7 @@ button:focus {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
-  overflow: hidden;
-  top: 50%;
+  overflow: hidden; /*So that there are no scrollbars*/
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
